@@ -1,38 +1,368 @@
-.App {
-  text-align: center;
+:root {
+  --bs-body-bg: #e0d8b0 !important;
+  --bs-primary-rgb: 255, 141, 199 !important;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  background-color: #fcffe7;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bg-light {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.accordion-button:not(.collapsed) {
+  background-color: #e0d8b0 !important;
+}
+.accordion {
+  -bs-accordion-active-bg: #e0d8b0 !important;
+  border: black 1px !important;
+}
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #ce9461 !important;
+  --bs-btn-border-color: #524b44 !important;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #dea057 !important;
+  --bs-btn-hover-border-color: #dea057 !important;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #dea057 !important;
+  --bs-btn-active-border-color: #dea057 !important;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #ce9461 !important;
+  --bs-btn-disabled-border-color: #ce9461 !important;
+}
+.bg-body-tertiary {
+  --bs-bg-opacity: 0 !important;
+}
+.pagination {
+  --bs-pagination-border-color: #ffb9b9 !important;
+}
+.nav-link {
+  font-size: 20px !important;
+}
+.page-link {
+  color: black !important;
+}
+.link {
+  color: inherit;
+  text-decoration: inherit;
+}
+.dropdown-menu {
+  --bs-dropdown-link-active-bg: none !important;
+}
+.form-select,
+.form-control {
+  background-color: white !important;
+}
+.form-check-input:checked {
+  background-color: #ff8dc7 !important;
+  border-color: #ff8dc7 !important;
+}
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 141, 199, 0.25) !important;
+}
+.form-check-input:checked[type="radio"] {
+  --bs-form-check-bg-image: url("") !important;
+}
+.shoedesc {
+  text-align: justify;
+}
+.blog {
+  text-align: justify;
+}
+.form-label {
+  margin-bottom: 0px !important;
+  margin-top: 2px !important;
+}
+.about,
+.footer-description {
+  text-align: justify;
+}
+html,
+body {
+  width: 100% !important;
+  height: 100%;
+  min-height: 100vh !important;
+  overflow-x: hidden !important;
+  font-family: Söhne, ui-sans-serif, system-ui, -apple-system !important;
+  background-color: #e0d8b0 !important;
+}
+#dropdown {
+  border: 2px solid;
+  border-radius: 10px;
+}
+#page-container {
+  min-height: 100vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+.logo {
+  height: 60px;
+}
+.footer {
+  margin-top: auto !important;
+  bottom: 0;
+  width: 100%;
+  background-color: #643a15;
   color: white;
+  /* text-align: center; */
+}
+.accordion {
+  background-color: #e0d8b0;
+}
+.accordion-button {
+  background-color: #e0d8b0;
+}
+.accordion-button:focus {
+  z-index: 3;
+  border-color: none;
+  outline: 0;
+  box-shadow: none;
+}
+accordion-button:not(.collapsed) {
+  color: var(--bs-accordion-active-color);
+  background-color: #e0d8b0 !important;
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0
+    var(--bs-accordion-border-color);
+}
+.google {
+  background-color: rgb(222, 160, 87) !important;
+  box-shadow: none !important;
+  /* box-shadow: none !important; */
+}
+.google:hover {
+  background-color: #ce9461 !important;
+  box-shadow: none !important;
+  /* box-shadow: none !important; */
 }
 
-.App-link {
-  color: #61dafb;
+.footerlast {
+  height: 20px !important;
+}
+#tabs-tabpane-register > form > button {
+  margin-top: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#tabs-tabpane-login > form > button {
+  margin-top: 5px;
+}
+
+/* .cartimg {
+  height: 100px !important;
+  text-align: center !important;
+} */
+.zeroradius {
+  --bs-btn-border-radius: 0px !important;
+  border-color: black !important;
+  border-style: dotted !important;
+}
+
+:root,
+[data-bs-theme="light"] {
+  --bs-primary-bg-subtle: #fcffe7 !important;
+}
+.active > .page-link,
+.page-link.active {
+  z-index: 3 !important;
+  color: white !important;
+  background-color: #ce9461 !important;
+  border-color: #ce9461 !important;
+}
+
+.pagination {
+  --bs-pagination-color: var(--bs-link-color);
+
+  --bs-pagination-border-color: var(--bs-border-color);
+
+  --bs-pagination-hover-color: var(--bs-link-hover-color);
+
+  --bs-pagination-hover-border-color: var(--bs-border-color);
+  --bs-pagination-focus-color: var(--bs-link-hover-color);
+
+  --bs-pagination-focus-box-shadow: none;
+  --bs-pagination-active-color: #fff;
+
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+.form-select:focus,
+.form-control:focus {
+  border-color: #ce9461 !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.3rem rgb(206, 148, 97, 0.25) !important;
+}
+.page-link {
+  color: black;
+}
+.recgen {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.recgenform {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.hero-video-container {
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+  height: 500px;
+  background-color: black;
+}
+
+.hero-video {
+  height: 500px;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.4;
+}
+.hero-video-container {
+  height: 500px;
+}
+.hero-video-container video {
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  color: white;
+  top: 5em;
+  text-align: center;
+  align-self: center;
+}
+
+.card-title {
+  max-height: 48px !important;
+  min-height: 48px !important;
+  overflow: hidden !important;
+}
+.shop-now-btn {
+  opacity: 0.9;
+  font-weight: bolder;
+  border: 0px;
+  bottom: 2rem;
+  align-self: center;
+  font-size: 2rem;
+  font-weight: 900;
+  padding: 1.1rem 3.5rem;
+  border-radius: 40px;
+  color: rgb(0, 0, 0);
+  background-color: #ce9461;
+}
+
+.shop-now-btn:hover {
+  opacity: 1;
+  cursor: pointer;
+  background-position: left center; /* change the direction of the change here */
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  background-color: #dea057;
+}
+
+.container-fluid {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.form-select {
+  background-color: white !important;
+}
+.form-check-input {
+  background-color: white !important;
+}
+
+.nav-link {
+  color: inherit !important;
+}
+.footerp {
+  text-align: justify;
+}
+@media (min-width: 931px) {
+  .hero-text h1 {
+    margin-top: 20px;
+    font-size: 4em;
+    align-self: center;
   }
-  to {
-    transform: rotate(360deg);
+  .hero-text h2 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    opacity: 0.8;
+  }
+  .shop-now-btn {
+    opacity: 0.9;
+    font-weight: bolder;
+    border: 0px;
+    bottom: 2rem;
+    align-self: center;
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 1.1rem 3.5rem;
+    border-radius: 40px;
+    color: rgb(0, 0, 0);
+    background-color: #ce9461;
   }
 }
+
+.hero-text h1 {
+  font-size: 3.5em;
+  align-self: center;
+}
+.hero-text h2 {
+  margin-top: 16px;
+  font-size: 1.2em;
+  opacity: 0.8;
+}
+.shop-now-btn {
+  opacity: 0.9;
+  font-weight: bolder;
+  border: 0px;
+  bottom: 2rem;
+  align-self: center;
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding: 1.1rem 3.5rem;
+  border-radius: 40px;
+  color: rgb(0, 0, 0);
+  background-color: #ce9461;
+}
+/* @media (max-width: 576px) { */
+/* .zooter {
+    padding-bottom: 360px !important;
+  }
+  footer {
+    padding-top: 50px;
+    position: absolute;
+    bottom: 0 !important;
+    width: 100%;
+    height: 350px !important;
+    background-color: #ffb9b9;
+    color: black;
+  }
+} */
+/* @media screen and (max-width: 992px) {
+  html,
+  body {
+    margin: 0px !important;
+    padding: 0px !important;
+    width: 100% !important;
+    height: 100%;
+    overflow-x: hidden !important;
+    overflow-y: scroll !important;
+  }
+} */
+
+/* On screens that are 600px or less, set the background color to olive */
+/* @media screen and (max-width: 600px) {
+  html,
+  body {
+    margin: 0px !important;
+    padding: 0px !important;
+    width: 100% !important;
+    height: 100%;
+    overflow-x: hidden !important;
+    overflow-y: scroll !important;
+  }
+} */
